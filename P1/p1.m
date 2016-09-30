@@ -32,3 +32,24 @@ disp(absError);
 % is a less accurate iterate may come after a more accurate one.
 
 %plot(1:10, absError(1:10));
+
+% Part (c)
+fp = @(x) 3*x^2;
+iterates = newton(f,fp,3,100,10^-20);
+% Found root 2.924 after 5 iterations.
+
+% Part (d)
+% Calculate absolute error at each iterate
+absError = arrayfun(@(x) abs(pActual-x), iterates);
+disp(absError);
+
+% The convergence for Newton's method is much faster than the bisection
+% method, and we can see the absolute error decreasing and absolute digits
+% of accuracy increasing at a much faster rate than bisection.  It looks to
+% be at least quadratic in speed of convergence.
+
+% Problem 2
+%-----------
+
+
+
