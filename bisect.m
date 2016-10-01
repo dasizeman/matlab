@@ -5,9 +5,7 @@ FA = f(a);
 
 while i <= N
     p = a + (b-a)/2;
-    disp((b-a)/2)
     FP = f(p);
-    disp(TOL)
     if FP == 0 || (b-a)/2 < TOL % found the root or close enough
         break
     elseif sign(FA) * sign(FP) > 0 % root in other half

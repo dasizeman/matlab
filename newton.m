@@ -11,6 +11,6 @@ while i <= N
     p0 = p;
 end
 
-disp(['The method failed after ' num2str(i) ' iterations.']);
+disp(['The method failed after ' num2str(i-1) ' iterations.']);
     
     
