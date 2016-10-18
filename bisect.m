@@ -5,6 +5,8 @@ FA = f(a);
 
 while i <= N
     p = a + (b-a)/2;
+    res(i) = p;
+    i = i + 1;
     FP = f(p);
     if FP == 0 || (b-a)/2 < TOL % found the root or close enough
         break
@@ -14,8 +16,7 @@ while i <= N
     else % Root is in this half
         b = p;
     end
-    i = i + 1;
-    res(i) = p;
+    
 end
 
 outputStr = ['Found root ' num2str(p) ' after ' num2str(i) ' iterations.'];
