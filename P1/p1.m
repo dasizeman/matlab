@@ -115,6 +115,41 @@ end
 
 %----------------------------------------------------------------
 
+% Output:
+% Problem 1
+% -----------------------------------
+% Bisection should theoretically take 67 iterations
+% Found root 2.924 after 49 iterations.
+% Absolute error for each iterate:
+%   Columns 1 through 13
+% 
+%     2.9240    0.4240    0.1740    0.0490    0.0135    0.0178    0.0021    0.0057    0.0018    0.0002    0.0008    0.0003    0.0001
+% 
+%   Columns 14 through 26
+% 
+%     0.0001    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+% 
+%   Columns 27 through 39
+% 
+%     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+% 
+%   Columns 40 through 49
+% 
+%     0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000    0.0000
+% 
+% Newton's Method:
+% Found root 2.924 after 5 iterations.
+% Absolute error for each iterate:
+%     2.9240    0.0019    0.0000    0.0000         0
+% 
+% Problem 2
+% -----------------------------------
+% The method failed after 500 iterations.
+% The method failed after 500 iterations.
+% Found fixed point 1.4758 after 7 iterations.
+% Found fixed point 1.4758 after 355 iterations.
+
+
 
 
 
