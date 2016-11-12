@@ -28,6 +28,7 @@ disp('Using values close to Secant values to find the real root');
 
 % Similar values to the other methods should be fine for the real root
 mueler(f, 1.4, 1.5, 1.501, 100, 10^(-6));
+
 % I really just guessed different values on intervals less than the real
 % root to find the complex roots
 disp('Using p0 = -5, p1 = -4.5, p2 = -4 to find first complex root');
