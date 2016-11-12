@@ -1,11 +1,10 @@
-function coeffs=lagrange(f,a,b,n)
+function coeffs=lagrange(f,nodes)
 % Get the lagrange interpolates
-xvals = linspace(a,b,n+1);
-Lx = l_interps(xvals);
+Lx = l_interps(nodes);
 
 % Scale each interpolate by f(xi)
-for i = 1:length(xvals)
-    Lx(i,:) = Lx(i,:) .* f(xvals(i));
+for i = 1:length(nodes)
+    Lx(i,:) = Lx(i,:) .* f(nodes(i));
 end
 
 % Sum the columns (the coefficents of each degree of x) to get the final
