@@ -71,7 +71,7 @@ function lagrange_tests(nodefunc, axis_bounds)
 f = @(x) 1/(1+x^2);
 q = 1+sqrt(10);
 
-for i = 5:5:20
+for i = 5:5:15
     nodes = nodefunc(-5,5,i+1);
     lagrange_poly = lagrange(f,nodes);
 
